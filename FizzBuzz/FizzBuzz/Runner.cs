@@ -12,7 +12,7 @@ namespace FizzBuzz
         {
             for (int i = 0; i < 100; i++)
             {
-                PrintNumber(i);
+                NumberPrinter.PrintNumber(i);
             }
         }
     }
