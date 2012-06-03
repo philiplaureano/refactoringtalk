@@ -8,9 +8,15 @@ namespace FizzBuzz
 {
     public class NumberDisplay
     {
+        private readonly ActualNumberDisplay _numberDisplay;
+
+        public NumberDisplay()
+        {
+            _numberDisplay = new ActualNumberDisplay();
+        }
+
         public string GetOutputString(int i)
         {
-            var numberDisplay = new ActualNumberDisplay();
             var isFizz = i % 3 == 0;
             var isBuzz = i % 5 == 0;
 
@@ -23,7 +29,7 @@ namespace FizzBuzz
             if (isBuzz)
                 return "Buzz";
 
-            return numberDisplay.DisplayTheActualNumber(i);
+            return _numberDisplay.DisplayTheActualNumber(i);
         }        
     }
 }

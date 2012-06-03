@@ -8,12 +8,18 @@ namespace FizzBuzz
 {
     public class Runner
     {
+        private readonly NumberPrinter _numberPrinter;
+
+        public Runner()
+        {
+            _numberPrinter = new NumberPrinter();
+        }
+
         public void Run()
         {
-            var numberPrinter = new NumberPrinter();
             for (int i = 0; i < 100; i++)
             {
-                numberPrinter.PrintNumber(i);
+                _numberPrinter.PrintNumber(i);
             }
         }
     }
