@@ -32,6 +32,11 @@ namespace FizzBuzz
             if (isBuzz)
                 return "Buzz";
 
+            return DisplayTheActualNumber(i);
+        }
+
+        private static string DisplayTheActualNumber(int i)
+        {
             return i.ToString(CultureInfo.InvariantCulture);
         }
     }
