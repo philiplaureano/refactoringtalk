@@ -8,16 +8,19 @@ namespace FizzBuzz
 {
     public class Runner
     {
-        // Notice that the Run method is the only method grayed out;
-        // This is the only part of the API that should be exposed
-        public static void Run()
+        public void Run()
         {
             for (int i = 0; i < 100; i++)
             {
-                var whatToPrint = GetOutputString(i);
-
-                Console.WriteLine(whatToPrint);
+                PrintNumber(i);
             }
+        }
+
+        private static void PrintNumber(int i)
+        {
+            var whatToPrint = GetOutputString(i);
+
+            Console.WriteLine(whatToPrint);
         }
 
         private static string GetOutputString(int i)

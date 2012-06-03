@@ -10,7 +10,8 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
-            Runner.Run();
+            var runner = new Runner();
+            runner.Run();
         }
     }
 }
