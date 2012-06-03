@@ -15,6 +15,11 @@ namespace FizzBuzz
             _numberDisplay = new ActualNumberDisplay();
         }
 
+        public NumberDisplay(INumberDisplay actualNumberDisplay)
+        {
+            _numberDisplay = actualNumberDisplay;
+        }
+
         public string GetOutputString(int i)
         {
             var isFizz = i % 3 == 0;

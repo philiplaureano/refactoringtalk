@@ -15,6 +15,11 @@ namespace FizzBuzz
             _display = new NumberDisplay();
         }
 
+        public NumberPrinter(INumberDisplay display)
+        {
+            _display = display;
+        }
+
         public void PrintNumber(int i)
         {
             var whatToPrint = _display.GetOutputString(i);

@@ -37,6 +37,12 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Hiro">
+      <HintPath>..\..\lib\Hiro.dll</HintPath>
+    </Reference>
+    <Reference Include="Hiro.Containers">
+      <HintPath>..\..\lib\Hiro.Containers.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
