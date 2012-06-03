@@ -10,9 +10,10 @@ namespace FizzBuzz
     {
         public void Run()
         {
+            var numberPrinter = new NumberPrinter();
             for (int i = 0; i < 100; i++)
             {
-                NumberPrinter.PrintNumber(i);
+                numberPrinter.PrintNumber(i);
             }
         }
     }
