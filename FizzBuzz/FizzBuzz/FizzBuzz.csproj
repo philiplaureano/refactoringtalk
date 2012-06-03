@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActualNumberDisplay.cs" />
     <Compile Include="NumberDisplay.cs" />
     <Compile Include="NumberPrinter.cs" />
     <Compile Include="Program.cs" />

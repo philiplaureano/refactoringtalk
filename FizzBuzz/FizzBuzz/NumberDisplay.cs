@@ -10,6 +10,7 @@ namespace FizzBuzz
     {
         public string GetOutputString(int i)
         {
+            var numberDisplay = new ActualNumberDisplay();
             var isFizz = i % 3 == 0;
             var isBuzz = i % 5 == 0;
 
@@ -22,12 +23,7 @@ namespace FizzBuzz
             if (isBuzz)
                 return "Buzz";
 
-            return DisplayTheActualNumber(i);
-        }
-
-        private static string DisplayTheActualNumber(int i)
-        {
-            return i.ToString(CultureInfo.InvariantCulture);
-        }
+            return numberDisplay.DisplayTheActualNumber(i);
+        }        
     }
 }
