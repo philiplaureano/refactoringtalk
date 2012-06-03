@@ -15,6 +15,7 @@ namespace FizzBuzz
             Console.WriteLine(whatToPrint);
         }
 
+        #region Methods for Displaying Numbers
         private static string GetOutputString(int i)
         {
             var isFizz = i % 3 == 0;
@@ -35,6 +36,7 @@ namespace FizzBuzz
         private static string DisplayTheActualNumber(int i)
         {
             return i.ToString(CultureInfo.InvariantCulture);
-        }
+        } 
+        #endregion
     }
 }
