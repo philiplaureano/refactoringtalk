@@ -23,6 +23,10 @@ namespace FizzBuzz
                 {
                     Console.WriteLine("Buzz");
                 }
+                else
+                {
+                    Console.WriteLine(i);
+                }
             }
         }
     }
