@@ -10,6 +10,11 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
+            Run();
+        }
+
+        private static void Run()
+        {
             for (int i = 0; i < 100; i++)
             {
                 var whatToPrint = GetOutputString(i);
