@@ -10,33 +10,10 @@ namespace FizzBuzz
     {
         public void PrintNumber(int i)
         {
-            var whatToPrint = GetOutputString(i);
+            var display = new NumberDisplay();
+            var whatToPrint = display.GetOutputString(i);
 
             Console.WriteLine(whatToPrint);
-        }
-
-        #region Methods for Displaying Numbers
-        private static string GetOutputString(int i)
-        {
-            var isFizz = i % 3 == 0;
-            var isBuzz = i % 5 == 0;
-
-            if (isFizz && isBuzz)
-                return "FizzBuzz";
-
-            if (isFizz)
-                return "Fizz";
-
-            if (isBuzz)
-                return "Buzz";
-
-            return DisplayTheActualNumber(i);
-        }
-
-        private static string DisplayTheActualNumber(int i)
-        {
-            return i.ToString(CultureInfo.InvariantCulture);
-        } 
-        #endregion
+        }        
     }
 }
