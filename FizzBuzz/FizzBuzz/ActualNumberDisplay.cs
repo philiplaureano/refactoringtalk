@@ -6,9 +6,9 @@ using System.Text;
 
 namespace FizzBuzz
 {
-    public class ActualNumberDisplay
+    public class ActualNumberDisplay : INumberDisplay
     {
-        public string DisplayTheActualNumber(int i)
+        public string GetOutputString(int i)
         {
             return i.ToString(CultureInfo.InvariantCulture);
         }

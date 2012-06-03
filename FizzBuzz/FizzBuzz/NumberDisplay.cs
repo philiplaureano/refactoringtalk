@@ -29,7 +29,7 @@ namespace FizzBuzz
             if (isBuzz)
                 return "Buzz";
 
-            return _numberDisplay.DisplayTheActualNumber(i);
+            return _numberDisplay.GetOutputString(i);
         }        
     }
 }
