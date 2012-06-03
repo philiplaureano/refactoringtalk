@@ -10,7 +10,7 @@ namespace FizzBuzz
     {
         // Notice that the Run method is the only method grayed out;
         // This is the only part of the API that should be exposed
-        private static void Run()
+        public static void Run()
         {
             for (int i = 0; i < 100; i++)
             {
