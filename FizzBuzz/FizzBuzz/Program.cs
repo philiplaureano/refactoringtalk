@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
+using Hiro;
 
 namespace FizzBuzz
 {
@@ -10,7 +8,16 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
-            var runner = new Runner();
+            // Manually register the dependencies
+            var map = new DependencyMap();
+            map.AddService<IRunner, Runner>();
+            map.AddService<INumberDisplay, NumberDisplay>();
+            map.AddService<INumberDisplay, ActualNumberDisplay>("ActualNumberDisplay");
+            map.AddService<INumberPrinter, NumberPrinter>();
+
+            var container = map.CreateContainer();
+
+            var runner = container.GetInstance<IRunner>();
             runner.Run();
         }
     }
