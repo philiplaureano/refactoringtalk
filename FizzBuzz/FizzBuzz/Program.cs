@@ -20,23 +20,19 @@ namespace FizzBuzz
 
         private static string GetOutputString(int i)
         {
-            var whatToPrint = i.ToString(CultureInfo.InvariantCulture);
             var isFizz = i%3 == 0;
             var isBuzz = i%5 == 0;
 
             if (isFizz && isBuzz)
-            {
-                whatToPrint = "FizzBuzz";
-            }
-            else if (isFizz)
-            {
-                whatToPrint = "Fizz";
-            }
-            else if (isBuzz)
-            {
-                whatToPrint = "Buzz";
-            }
-            return whatToPrint;
+                return "FizzBuzz";
+
+            if (isFizz)
+                return "Fizz";
+            
+            if (isBuzz)
+                return "Buzz";
+
+            return i.ToString(CultureInfo.InvariantCulture);
         }
     }
 }
