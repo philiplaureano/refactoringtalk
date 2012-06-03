@@ -16,6 +16,7 @@ namespace FizzBuzz
             }
         }
 
+        #region Number Printing Methods
         private static void PrintNumber(int i)
         {
             var whatToPrint = GetOutputString(i);
@@ -43,6 +44,7 @@ namespace FizzBuzz
         private static string DisplayTheActualNumber(int i)
         {
             return i.ToString(CultureInfo.InvariantCulture);
-        }
+        } 
+        #endregion
     }
 }
