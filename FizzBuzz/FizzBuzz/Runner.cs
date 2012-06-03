@@ -6,7 +6,7 @@ using System.Text;
 
 namespace FizzBuzz
 {
-    public class Runner
+    public class Runner : IRunner
     {
         private readonly NumberPrinter _numberPrinter;
 
