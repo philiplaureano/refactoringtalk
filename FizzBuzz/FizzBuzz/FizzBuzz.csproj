@@ -52,9 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActualNumberDisplay.cs" />
-    <Compile Include="INumberDisplay.cs" />
-    <Compile Include="INumberPrinter.cs" />
-    <Compile Include="IRunner.cs" />
+    <Compile Include="Interfaces\INumberDisplay.cs" />
+    <Compile Include="Interfaces\INumberPrinter.cs" />
+    <Compile Include="Interfaces\IRunner.cs" />
     <Compile Include="NumberDisplay.cs" />
     <Compile Include="NumberPrinter.cs" />
     <Compile Include="Program.cs" />

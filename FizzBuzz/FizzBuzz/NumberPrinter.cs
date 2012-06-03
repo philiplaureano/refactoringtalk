@@ -8,7 +8,7 @@ namespace FizzBuzz
 {
     public class NumberPrinter : INumberPrinter
     {
-        private readonly NumberDisplay _display;
+        private readonly INumberDisplay _display;
 
         public NumberPrinter()
         {
