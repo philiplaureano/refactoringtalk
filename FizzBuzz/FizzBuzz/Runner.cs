@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 
@@ -7,7 +8,8 @@ namespace FizzBuzz
 {
     public class Runner
     {
-        #region The FizzBuzz Implementation
+        // Notice that the Run method is the only method grayed out;
+        // This is the only part of the API that should be exposed
         private static void Run()
         {
             for (int i = 0; i < 100; i++)
@@ -17,7 +19,6 @@ namespace FizzBuzz
                 Console.WriteLine(whatToPrint);
             }
         }
-
 
         private static string GetOutputString(int i)
         {
@@ -40,6 +41,5 @@ namespace FizzBuzz
         {
             return i.ToString(CultureInfo.InvariantCulture);
         }
-        #endregion
     }
 }
