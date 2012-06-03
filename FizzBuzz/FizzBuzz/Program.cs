@@ -11,7 +11,7 @@ namespace FizzBuzz
             // Manually register the dependencies
             var map = new DependencyMap();
             map.AddService<IRunner, Runner>();
-            map.AddService<INumberDisplay, NumberDisplay>();
+            map.AddService<INumberDisplay, FizzBuzzNumberDisplay>();
             map.AddService<INumberDisplay, ActualNumberDisplay>("ActualNumberDisplay");
             map.AddService<INumberPrinter, NumberPrinter>();
 

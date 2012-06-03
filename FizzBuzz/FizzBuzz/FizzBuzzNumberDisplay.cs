@@ -6,16 +6,11 @@ using System.Text;
 
 namespace FizzBuzz
 {
-    public class NumberDisplay : INumberDisplay
+    public class FizzBuzzNumberDisplay : INumberDisplay
     {
-        private readonly INumberDisplay _numberDisplay;
+        private readonly INumberDisplay _numberDisplay;        
 
-        public NumberDisplay()
-        {
-            _numberDisplay = new ActualNumberDisplay();
-        }
-
-        public NumberDisplay(INumberDisplay actualNumberDisplay)
+        public FizzBuzzNumberDisplay(INumberDisplay actualNumberDisplay)
         {
             _numberDisplay = actualNumberDisplay;
         }

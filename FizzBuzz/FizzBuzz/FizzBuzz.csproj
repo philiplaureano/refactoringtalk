@@ -61,7 +61,7 @@
     <Compile Include="Interfaces\INumberDisplay.cs" />
     <Compile Include="Interfaces\INumberPrinter.cs" />
     <Compile Include="Interfaces\IRunner.cs" />
-    <Compile Include="NumberDisplay.cs" />
+    <Compile Include="FizzBuzzNumberDisplay.cs" />
     <Compile Include="NumberPrinter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

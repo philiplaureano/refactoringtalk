@@ -8,12 +8,7 @@ namespace FizzBuzz
 {
     public class Runner : IRunner
     {
-        private readonly INumberPrinter _numberPrinter;
-        
-        public Runner()
-        {
-            _numberPrinter = new NumberPrinter();
-        }
+        private readonly INumberPrinter _numberPrinter;                
 
         public Runner(INumberPrinter numberPrinter)
         {
